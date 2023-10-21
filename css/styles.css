@@ -144,6 +144,12 @@ select:-webkit-autofill:focus {
 .site-header__logo {
   margin-right: 24px;
 }
+
+/* ** MAIN CONTENT ** */
+.main-content
+{
+  flex-grow: 1;
+}
 /* =| HERO |= */
 .hero {
   padding-top: 28px;
@@ -241,10 +247,11 @@ select:-webkit-autofill:focus {
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-
-
-/* ** MAIN CONTENT ** */
-.main-content
-{
-  flex-grow: 1;
+.footer{
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+.footer p{
+  word-spacing: 4px;
 }

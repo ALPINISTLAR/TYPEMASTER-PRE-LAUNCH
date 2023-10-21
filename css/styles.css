@@ -214,7 +214,33 @@ select:-webkit-autofill:focus {
   text-transform: uppercase;
   margin-bottom: 27px;
 }
-
+/* INDEX FEATURES */
+.features {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.features__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.features__item {
+  width: 255px;
+}
+.feature__icon {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 48px;
+}
+.feature__title {
+  color: var(--black);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
 
 
 /* ** MAIN CONTENT ** */

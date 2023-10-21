@@ -1,15 +1,31 @@
+/* CUSTOM PROPERTIES */
+:root{
+  --primary-color:  hsl(22, 89%, 52%);
+  --primary-color-dim: hsl(22, 100%, 69%);
+  --black: hsl(220, 50%, 17%);
+  --grey: hsl(198, 28%, 93%);
+  --dark-grey: hsl(221, 23%, 58%);
+  --white: hsl(0, 0%, 100%);
+}
+
 /* ** GLOBAL STYLES ** */
-html
-{
+html{
   height: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 *,
 *::before,
-*::after
-{
+*::after{
   box-sizing: inherit;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
 }
 /* ----------------- */
 /* ===== body ====== */
@@ -23,8 +39,8 @@ body
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  font-family: Arial, sans-serif;
-  letter-spacing: 0.5px;
+  font-family: 'Barlow', Arial, sans-serif;
+  letter-spacing: 0;
   background-color: #fff;
   color: #222;
 }
@@ -58,14 +74,27 @@ select:-webkit-autofill:focus {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+/* BUTTON */
+.btn{
+  padding: 16px 27px;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 8px;
+}
 /* *** CONTAINER *** */
 .container
 {
   width: 100%;
+  max-width: 1158px;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
+
+
 
 /* ** MAIN CONTENT ** */
 .main-content
